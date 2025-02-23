@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
 class CotacaoService {
   static Future<Map<String, dynamic>> getDadosCotacoes() async {
     try {
-      final res = await http.get(Uri.parse('http://api.hgbrasil.com/finance?key=c09440f1'));
+      final res = await http.get(Uri.parse('http://api.hgbrasil.com/finance?key=<chave>'));
       if (res.statusCode != HttpStatus.ok) {
         throw 'Erro de conexão';
       }
